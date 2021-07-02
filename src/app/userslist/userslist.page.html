@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>users</ion-title>
+  <ion-buttons slot¨start¨>
+</ion-back-button defaulthref=¨home¨></ion-back-button>
+</ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ionlist>
+    <ion-item *ngFor=¨let character of characters¨[routerLink]=¨[/'profile' + character.id/]¨>
+      <ion-label>{ {character.name }} </ion-label>
+      <ion-avatar slot=¨start¨> 
+        <img src=" {{character.image}}" alt="">
+      </ion-avatar>
+
+      </ion-item>
+
+  </ion-content>
+
+</ion-content>
+
